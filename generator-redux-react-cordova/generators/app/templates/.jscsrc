@@ -1,0 +1,8 @@
+{
+	"esnext": true,
+	"fix": false,
+	"fileExtensions": [".js", ".jsx"],
+	"preset": "airbnb",
+	"maximumLineLength": 120,
+	"maxErrors": -1
+}

@@ -1,0 +1,20 @@
+root = true
+
+[**]
+charset = utf-8
+indent_style = space
+indent_size = 2
+max_line_length = 120
+end_of_line=lf
+
+[**.{js,jsx,json}]
+trim_trailing_whitespace = true
+quote_type = auto
+space_after_control_statements = true
+space_after_anonymous_functions = false
+spaces_around_operators = true
+spaces_in_brackets = false
+insert_final_newline = true
+
+[**.{html}]
+insert_final_newline = false

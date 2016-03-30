@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "{{id}}"
+        version   = "{{version}}">
+    <name>{{name}}</name>
+    <description>{{description}}</description>
+    <author>{{author}}</author>
+
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.1.0" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" version="0.6.0" />
+
+    <preference name="permissions"                value="none"/>
+    <preference name="phonegap-version"           value="cli-6.0.0" />
+    <preference name="orientation"                value="portrait" />
+    <preference name="target-device"              value="universal" />
+    <preference name="fullscreen"                 value="true" />
+    <preference name="webviewbounce"              value="false" />
+    <preference name="prerendered-icon"           value="true" />
+    <preference name="stay-in-webview"            value="false" />
+    <preference name="ios-statusbarstyle"         value="black-opaque" />
+    <preference name="detect-data-types"          value="true" />
+    <preference name="exit-on-suspend"            value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen"    value="false" />
+    <preference name="disable-cursor"             value="false" />
+    <preference name="android-minSdkVersion"      value="7" />
+    <preference name="android-installLocation"    value="auto" />
+
+    <preference name="AutoHideSplashScreen"       value="false" />
+    <preference name="FadeSplashScreen"           value="false" />
+    <preference name="SplashScreenDelay"          value="0" />
+    <preference name="ShowSplashScreenSpinner"    value="true" />
+    <preference name="KeepRunning"                value="true" />
+    <preference name="SplashScreen"               value="splash" />
+
+    <icon src="icon.png" />
+    <splash src="splashes/ios/Default~iphone" />
+
+    <platform name="android">
+      <icon src="icons/android/icon-36-ldpi.png" gap:density="ldpi" />
+      <icon src="icons/android/icon-48-mdpi.png" gap:density="mdpi" />
+      <icon src="icons/android/icon-72-hdpi.png" gap:density="hdpi" />
+      <icon src="icons/android/icon-96-xhdpi.png" gap:density="xhdpi" />
+      <icon src="icons/android/icon-144-xxhdpi.png" gap:density="xxhdpi" />
+      <icon src="icons/android/icon-192-xxxhdpi.png" gap:density="xxxhdpi" />
+
+      <gap:splash src="splashes/android/screen-ldpi-portrait.png" gap:density="ldpi" />
+      <gap:splash src="splashes/android/screen-mdpi-portrait.png" gap:density="mdpi" />
+      <gap:splash src="splashes/android/screen-hdpi-portrait.png" gap:density="hdpi" />
+      <gap:splash src="splashes/android/screen-xhdpi-portrait.png" gap:density="xhdpi" />
+      <gap:splash src="splashes/android/screen-xxhdpi-portrait.png" gap:density="xxhdpi" />
+      <gap:splash src="splashes/android/screen-xxxhdpi-portrait.png" gap:density="xxxhdpi" />
+    </platform>
+
+    <platform name="ios">
+      <icon src="icons/ios/icon-57.png" width="57" height="57" />
+      <icon src="icons/ios/icon-72.png" width="72" height="72" />
+      <icon src="icons/ios/icon-76.png" width="76" height="76" />
+      <icon src="icons/ios/icon-57-2x.png" width="114" height="114" />
+      <icon src="icons/ios/icon-120.png" width="120" height="120" />
+      <icon src="icons/ios/icon-72-2x.png" width="144" height="144" />
+      <icon src="icons/ios/icon-76-2x.png" width="152" height="152" />
+
+      <splash src="splashes/ios/Default~iphone.png" width="320"  height="480" />
+      <splash src="splashes/ios/Default@2x~iphone.png" width="640"  height="960" />
+      <splash src="splashes/ios/Default-568h@2x~iphone.png" width="640"  height="1136" />
+      <splash src="splashes/ios/Default-667h.png" width="750" height="1334" />
+      <splash src="splashes/ios/Default-Portrait~ipad.png" width="768"  height="1024" />
+      <splash src="splashes/ios/Default-736h.png" width="1242" height="2208" />
+      <splash src="splashes/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048" />
+    </platform>
+
+    <gap:config-file platform="ios" parent="UIStatusBarHidden">
+        <true/>
+    </gap:config-file>
+
+    <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
+        <false/>
+    </gap:config-file>
+
+    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+        <string>100</string>
+    </gap:config-file>
+
+    <access origin="*" />
+
+</widget>

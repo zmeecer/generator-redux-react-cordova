@@ -1,7 +1,7 @@
 {
-  "name": "{{name}}",
-  "version": "{{version}}",
-  "description": "{{description}}",
+  "name": "TestName",
+  "version": "1.0.0",
+  "description": "TestDescription",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.config.js --hot --progress --colors --port 8080",
     "static": "webpack -p --config webpack.prod.config.js && gulp static && http-server -p 3000 ./.public",

@@ -1,0 +1,36 @@
+.header {
+  border-bottom: 2px solid #DD002A;
+  img {
+    width: 100%;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: #050505;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    flex-grow: 1;
+    flex-shrink: 0;
+    a {
+      display: block;
+      padding: 1em 0;
+      text-align: center;
+      border-right: 1px solid #DD002A;
+      text-decoration: none;
+      color: #F0F0F0;
+      font-weight: bold;
+    }
+    &:last-child {
+      a {
+        border-right: none;
+      }
+    }
+  }
+}

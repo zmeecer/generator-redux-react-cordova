@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 import Subheader from '../../components/subheader';
-import Block from '../../components/list';
+import Block from '../../components/block';
 import Item from './item';
 
 const List = ({ onShowDetails, posts }) => (

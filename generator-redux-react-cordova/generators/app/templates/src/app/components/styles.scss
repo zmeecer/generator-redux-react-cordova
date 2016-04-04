@@ -7,3 +7,15 @@
     text-align: center;
   }
 }
+
+.button {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: #DD002A;
+  font-weight: bold;
+  background: #E0E0E0 url('/images/arrow_right.png') right center no-repeat;
+  &:hover {
+    background-color: #F0F0F0;
+  }
+}

@@ -1,20 +1,16 @@
 import React, { PropTypes } from 'react';
 import Subheader from '../../components/subheader';
-import Block from '../../components/block';
 
 const PostDetails = ({ post }) => (
   <div>
-    <Subheader />
+    <Subheader
+      title={ (post && `Post #${post.id}`) || 'Loading...'}
+    />
     { post &&
       <div>
-        <h3>{item.title}</h3>
-        <div>{item.body}</div>
+        <h3>{post.title}</h3>
+        <div>{post.body}</div>
       </div>
-    }
-    { !post &&
-      <Block
-        title='Loading'
-      />
     }
   </div>
 );

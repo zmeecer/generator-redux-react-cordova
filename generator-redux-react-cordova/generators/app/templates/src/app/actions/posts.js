@@ -60,7 +60,7 @@ export function failPost(error) {
   };
 }
 
-export function searchPosts() {
+export function loadPosts() {
   return (dispatch, getState) => {
     if (!isLoading(getState())) {
       dispatch(fetchPosts());

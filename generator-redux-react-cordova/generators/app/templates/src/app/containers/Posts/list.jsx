@@ -1,20 +1,16 @@
 import React, { PropTypes } from 'react';
 
 import Subheader from '../../components/subheader';
-import Block from '../../components/block';
 import Item from './item';
 
 const List = ({ onShowDetails, posts }) => (
   <div>
-    <Subheader title="Results" />
+    <Subheader
+      title={ posts.length ? 'Results' : 'Loading...' }
+    />
     { posts.map((item, index) =>
       <Item key={index} item={item} onClick={onShowDetails} />
     )}
-    { !posts.length &&
-      <Block
-        content='Loading...'
-      />
-    }
   </div>
 );
 

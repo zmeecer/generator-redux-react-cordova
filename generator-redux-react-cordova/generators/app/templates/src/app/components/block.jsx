@@ -1,6 +1,5 @@
 import React from 'react';
-
-// import styles from './styles.scss';
+import styles from './styles.scss';
 
 const Block = ({ text, title }) => (
   <div>

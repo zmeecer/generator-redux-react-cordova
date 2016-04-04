@@ -1,4 +1,5 @@
 .header {
+  display: block;
   border-bottom: 2px solid #DD002A;
   img {
     width: 100%;
@@ -22,7 +23,7 @@
       display: block;
       padding: 1em 0;
       text-align: center;
-      border-right: 1px solid #DD002A;
+      border-right: 2px solid #DD002A;
       text-decoration: none;
       color: #F0F0F0;
       font-weight: bold;

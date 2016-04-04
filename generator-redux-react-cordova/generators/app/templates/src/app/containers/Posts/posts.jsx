@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import { fetchPosts, loadPost } from '../../actions/posts';
+import { loadPosts, loadPost } from '../../actions/posts';
 import List from './list';
 import Details from './details';
 import styles from './styles.scss';
@@ -30,7 +30,7 @@ class Posts extends React.Component {
 
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch(fetchPosts());
+    dispatch(loadPosts());
   }
 
   render() {

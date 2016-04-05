@@ -11,7 +11,7 @@
   "author": "{{author}}",
   "repository": {
     "type": "git",
-    "url": "{{giturl}}"
+    "url": "http://github.com"
   },
   "dependencies": {
     "axios": "^0.9.1",

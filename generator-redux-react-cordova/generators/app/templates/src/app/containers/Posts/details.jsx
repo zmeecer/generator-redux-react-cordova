@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import Subheader from '../../components/subheader';
+import { Block, Subheader } from '../../components';
 
 const PostDetails = ({ post }) => (
   <div>
@@ -7,17 +7,16 @@ const PostDetails = ({ post }) => (
       title={ (post && `Post #${post.id}`) || 'Loading...'}
     />
     { post &&
-      <div>
-        <h3>{post.title}</h3>
-        <div>{post.body}</div>
-      </div>
+      <Block
+        title={post.title}
+        text={post.body}
+      />
     }
   </div>
 );
 
 PostDetails.propTypes = {
   post: React.PropTypes.object,
-  onPrev: React.PropTypes.func.isRequired,
 };
 
 export default PostDetails;

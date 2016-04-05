@@ -1,16 +1,22 @@
 import React from 'react';
-import { Subheader } from '../../components';
+import { Block, Subheader } from '../../components';
 import styles from './styles.scss';
 
 const More = () => (
   <div>
     <Subheader
-      title="More"
+      title="TODO"
+    />
+    <Block
+      title='Search page: actions, filtering, reducer...'
+    />
+    <Block
+      title='Middleware for API requests'
+    />
+    <Block
+      title='Upgrades styles'
     />
   </div>
 );
-
-More.propTypes = {
-};
 
 export default More;

@@ -1,22 +1,22 @@
 import React, { PropTypes } from 'react';
 
-import Subheader from '../../components/subheader';
-import Item from './item';
+import { List, Subheader } from '../../components';
 
-const List = ({ onShowDetails, posts }) => (
+const PostList = ({ posts, onShowDetails }) => (
   <div>
     <Subheader
       title={ posts.length ? 'Results' : 'Loading...' }
     />
-    { posts.map((item, index) =>
-      <Item key={index} item={item} onClick={onShowDetails} />
-    )}
+    <List
+      items={posts}
+      onClick={onShowDetails}
+    />
   </div>
 );
 
-List.propTypes = {
+PostList.propTypes = {
   onShowDetails: React.PropTypes.func.isRequired,
   posts: React.PropTypes.array.isRequired,
 };
 
-export default List;
+export default PostList;

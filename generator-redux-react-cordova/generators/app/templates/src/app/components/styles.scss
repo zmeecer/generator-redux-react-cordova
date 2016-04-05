@@ -9,13 +9,51 @@
 }
 
 .button {
-  display: block;
-  padding: 1em;
+  display: flex;
+  align-items: center;
+  padding: 0 1em ;
+  height: 3em;
   text-decoration: none;
   color: #DD002A;
   font-weight: bold;
-  background: #E0E0E0 url('/images/arrow_right.png') right center no-repeat;
+  background: #E0E0E0;
+  border-bottom: 2px solid #F0F0F0;
+  span {
+    display: block;
+    flex-grow: 1;
+  }
+  img {
+    display: block;
+    flex-shrink: 0;
+    height: 24px;
+  }
   &:hover {
     background-color: #F0F0F0;
+  }
+}
+
+.list {
+  a {
+    display: block;
+    position: relative;
+    border-bottom: 2px solid #E0E0E0;
+    padding: .5em 2em 0 1em;
+  }
+  h3, p {
+    margin: 0 0 .5em;
+  }
+  img {
+    position: absolute;
+    right: .5em;
+    top: 50%;
+    height: 24px;
+    margin-top: -12px;
+  }
+}
+
+.block {
+  padding: .5em 2em 0 1em;
+  h3, p {
+    margin: 0 0 .5em;
   }
 }

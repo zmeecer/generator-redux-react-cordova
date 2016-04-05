@@ -2,11 +2,11 @@
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "<%= id %>"
-        version   = "<%= version %>">
-    <name><%= name %></name>
-    <description><%= description %></description>
-    <author><%= author %></author>
+        id        = "<%= props.id %>"
+        version   = "<%= props.version %>">
+    <name><%= props.name %></name>
+    <description><%= props.description %></description>
+    <author><%= props.author %></author>
 
     <plugin name="cordova-plugin-splashscreen" spec="3.2.1" />
     <plugin name="cordova-plugin-whitelist" spec="1.2.1" />

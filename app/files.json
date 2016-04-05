@@ -3,7 +3,7 @@
     ".babelrc",
     ".editorconfig",
     ".gitignore",
-    "jscsrc",
+    ".jscsrc",
     "gulpfile.js",
     "package.json",
     "webpack.dev.config.js",
@@ -50,10 +50,10 @@
 
     "src/app/store/configureStore.js",
     "src/app/constants.js",
-    "src/app/index.js",
+    "src/app/index.js"
   ],
   "template": [
     "src/config.xml",
-    "src/index.html",
-  ],
+    "src/index.html"
+  ]
 }

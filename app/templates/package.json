@@ -1,14 +1,13 @@
 {
-  "name": "TestName",
-  "version": "1.0.0",
-  "description": "TestDescription",
+  "name": "<%= props.name %>",
+  "version": "<%= props.version %>",
+  "description": "<%= props.description %>",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.config.js --hot --progress --colors --port 8080",
     "static": "webpack -p --config webpack.prod.config.js && gulp static && http-server -p 3000 ./.public",
     "build": "webpack -p --config webpack.prod.config.js && gulp",
-    "jscs": "jscs src/app"
   },
-  "author": "{{author}}",
+  "author": "<%= props.author %>",
   "repository": {
     "type": "git",
     "url": "http://github.com/zmeecer/generator-redux-react-cordova"

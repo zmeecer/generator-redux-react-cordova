@@ -4,11 +4,11 @@ var chalk = require('chalk');
 var yosay = require('yosay');
 
 var CONST = {
-  ID: '_id',
-  NAME: '_name',
-  DESCRIPTION: '_desctiption',
-  VERSION: '_version',
-  AUTHOR: '_author',
+  ID: 'id',
+  NAME: 'name',
+  DESCRIPTION: 'description',
+  VERSION: 'version',
+  AUTHOR: 'author',
 }
 module.exports = yeoman.generators.Base.extend({
   prompting: function () {
@@ -53,10 +53,17 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   writing: function () {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
+    var files = require('./files.json');
+    var self = this;
+    console.log(JSON.stringify(this.props));
+
+    files.static.forEach(function(file) {
+      self.fs.copy(self.templatePath(file), self.destinationPath(file));
+    });
+
+    files.template.forEach(function(file) {
+      self.fs.copyTpl(self.templatePath(file), self.destinationPath(file), { props: self.props });
+    });
   },
 
   install: function () {

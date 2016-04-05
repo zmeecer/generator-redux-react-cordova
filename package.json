@@ -1,15 +1,14 @@
 {
   "name": "generator-redux-react-cordova",
-  "version": "0.0.0",
-  "description": "",
-  "homepage": "",
+  "version": "0.1.0",
+  "description": "Yeoman generator for React+Redux on Cordova platform",
+  "homepage": "https://github.com/zmeecer/generator-redux-react-cordova",
   "author": {
     "name": "Źmicier Jaraševič",
-    "email": "zmeecer@gmail.com",
-    "url": ""
+    "email": "zmeecer@gmail.com"
   },
   "files": [
-    "generators"
+    "app"
   ],
   "main": "generators/index.js",
   "keywords": [
@@ -21,6 +20,11 @@
     "cssmodules",
     "webpack"
   ],
+  "dependencies": {
+    "yeoman-generator": "^0.21.1",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  },
   "devDependencies": {
     "eslint": "^2.1.0",
     "eslint-config-xo-space": "^0.10.0",
@@ -32,7 +36,8 @@
     "gulp-mocha": "^2.0.0",
     "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^2.1.0",
-    "gulp-coveralls": "^0.1.0"
+    "gulp-coveralls": "^0.1.0",
+    "yeoman-assert": "^2.0.0"
   },
   "eslintConfig": {
     "extends": "xo-space",

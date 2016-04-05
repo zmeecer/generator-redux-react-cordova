@@ -1,0 +1,59 @@
+{
+  "static": [
+    ".babelrc",
+    ".editorconfig",
+    ".gitignore",
+    "jscsrc",
+    "gulpfile.js",
+    "package.json",
+    "webpack.dev.config.js",
+    "webpack.prod.config.js",
+
+    "src/icon.png",
+    "src/app/actions/posts.js",
+
+    "src/app/components/images/arrow_right.png",
+    "src/app/components/ajax-loader.gif",
+    "src/app/components/block.jsx",
+    "src/app/components/button.jsx",
+    "src/app/components/index.js",
+    "src/app/components/list.jsx",
+    "src/app/components/styles.scss",
+    "src/app/components/subheader.jsx",
+    "src/app/components/subheader.jsx",
+
+    "src/app/containers/App/images/logo.png",
+    "src/app/containers/App/app.jsx",
+    "src/app/containers/App/footer.jsx",
+    "src/app/containers/App/header.jsx",
+    "src/app/containers/App/index.js",
+    "src/app/containers/App/styles.scss",
+
+    "src/app/containers/Home/home.jsx",
+    "src/app/containers/Home/index.js",
+    "src/app/containers/Home/styles.scss",
+
+    "src/app/containers/Posts/details.jsx",
+    "src/app/containers/Posts/index.js",
+    "src/app/containers/Posts/list.jsx",
+    "src/app/containers/Posts/posts.jsx",
+    "src/app/containers/Posts/styles.scss",
+
+    "src/app/containers/Static/about.jsx",
+    "src/app/containers/Static/index.js",
+    "src/app/containers/Static/more.jsx",
+    "src/app/containers/Static/static.jsx",
+    "src/app/containers/Posts/styles.scss",
+
+    "src/app/reducers/index.js",
+    "src/app/reducers/posts.js",
+
+    "src/app/store/configureStore.js",
+    "src/app/constants.js",
+    "src/app/index.js",
+  ],
+  "template": [
+    "src/config.xml",
+    "src/index.html",
+  ],
+}

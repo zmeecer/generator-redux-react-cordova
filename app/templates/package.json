@@ -11,7 +11,7 @@
   "author": "{{author}}",
   "repository": {
     "type": "git",
-    "url": "http://github.com"
+    "url": "http://github.com/zmeecer/generator-redux-react-cordova"
   },
   "dependencies": {
     "axios": "^0.9.1",

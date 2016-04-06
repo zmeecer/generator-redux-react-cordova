@@ -5,11 +5,11 @@
     ".gitignore",
     ".jscsrc",
     "gulpfile.js",
-    "package.json",
     "webpack.dev.config.js",
     "webpack.prod.config.js",
 
     "src/icon.png",
+    "src/index.html",
     "src/app/actions/posts.js",
 
     "src/app/components/images/arrow_right.png",
@@ -43,7 +43,7 @@
     "src/app/containers/Static/index.js",
     "src/app/containers/Static/more.jsx",
     "src/app/containers/Static/static.jsx",
-    "src/app/containers/Posts/styles.scss",
+    "src/app/containers/Static/styles.scss",
 
     "src/app/reducers/index.js",
     "src/app/reducers/posts.js",
@@ -53,7 +53,7 @@
     "src/app/index.js"
   ],
   "template": [
-    "src/config.xml",
-    "src/index.html"
+    "package.json",
+    "src/config.xml"
   ]
 }

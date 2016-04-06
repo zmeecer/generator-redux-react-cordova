@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.config.js --hot --progress --colors --port 8080",
     "static": "webpack -p --config webpack.prod.config.js && gulp static && http-server -p 3000 ./.public",
-    "build": "webpack -p --config webpack.prod.config.js && gulp",
+    "build": "webpack -p --config webpack.prod.config.js && gulp"
   },
   "author": "<%= props.author %>",
   "repository": {

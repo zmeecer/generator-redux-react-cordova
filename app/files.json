@@ -9,7 +9,6 @@
     "webpack.prod.config.js",
 
     "src/icon.png",
-    "src/index.html",
     "src/app/actions/posts.js",
 
     "src/app/components/images/arrow_right.png",
@@ -54,6 +53,7 @@
   ],
   "template": [
     "package.json",
-    "src/config.xml"
+    "src/config.xml",
+    "src/index.html"
   ]
 }

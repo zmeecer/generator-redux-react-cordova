@@ -2,7 +2,6 @@
   "static": [
     ".babelrc",
     ".editorconfig",
-    ".gitignore",
     ".jscsrc",
     "gulpfile.js",
     "webpack.dev.config.js",
@@ -52,6 +51,7 @@
     "src/app/index.js"
   ],
   "template": [
+    "_.gitignore",
     "package.json",
     "src/config.xml",
     "src/index.html"

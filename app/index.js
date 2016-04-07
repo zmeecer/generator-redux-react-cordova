@@ -62,7 +62,11 @@ module.exports = yeoman.generators.Base.extend({
     });
 
     files.template.forEach(function(file) {
-      self.fs.copyTpl(self.templatePath(file), self.destinationPath(file), { props: self.props });
+      if (file === '_.gitignore') {
+        self.fs.copyTpl(self.templatePath(file), self.destinationPath('.gitignore'), { props: self.props });
+      } else {
+        self.fs.copyTpl(self.templatePath(file), self.destinationPath(file), { props: self.props });
+      }
     });
   },
 

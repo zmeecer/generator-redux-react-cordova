@@ -21,8 +21,8 @@
     "webpack"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.21.1",
     "chalk": "^1.0.0",
+    "yeoman-generator": "^0.22.5",
     "yosay": "^1.0.2"
   },
   "devDependencies": {
@@ -45,7 +45,7 @@
       "mocha": true
     }
   },
-  "repository": "zmeecer/generator-redux-react-cordova",
+  "repository": "https://github.com/zmeecer/generator-redux-react-cordova.git",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

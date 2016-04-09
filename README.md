@@ -1,5 +1,12 @@
-# generator-redux-react-cordova [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-redux-react-cordova
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 >
+
+## For What is for
+
+It's boilerplate for Cordova (Phonegap) project: easy to use, useful for frequent projects development. In most cases, Cordova (Phonegap) application is optimal way to develop simple and cheep application over API for different platforms: iOS, Android, Web and other.
+
+Actually, this is a good way to understand basics of Redux + React + Webpack for each developer and try it! After that you can build your Hybrid Mobile Application on the http://build.phonegap.com site (it was free for 1 app) or do it locally.
 
 ## Installation
 
@@ -35,27 +42,33 @@ Building in prod mode and bundling zip archive (gulp-zip 3.0.2 is necessary):
 npm run build
 ```
 
+Also, there is a helpful plugin for Chrome browser with CORS proxy, settings for screens resolution/orientation, geo-simaltion, etc [ripple-emalator](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc)
+
 ## Features
 
 * React ES6-style + React Router
-* Redux with simple AJAX request to jsonplaceholder
+* Redux with simple AJAX request
 * React CSS Modules
 * Webpack: babel (ES6 with stages), hot-reload, jscs, eslint (TBD)
 * PostCSS: autoprefixer, precss (sass-liked), csslint (TBD)
 * config.xml with initial resources: splash screens, icons, plugins
 * Gulp for images optimization and zip bundling for http://build.phonegap.com
 
-## Supported Platform
+## Supported Platforms
 
-* Node.js 4.x or 5.x
+* Node.js 4.x or 5.x as development environment
 * Cordova-cli (phonegap-cli): 6.x [release note]( http://cordova.apache.org/news/2016/01/28/tools-release.html)
     * Cordova iOS: ~4.0.1
     * Cordova Android: ~5.1.0
     * and you can add other platforms
 
-## Getting To Know Yeoman
+## Getting to Know Yeoman
 
 Yeoman has a heart of gold. He&#39;s a person with feelings and opinions, but he&#39;s very easy to work with. If you think he&#39;s too opinionated, he can be easily convinced. Feel free to [learn more about him](http://yeoman.io/).
+
+## Contribute
+
+Contributions are welcome. If you find something is missing or there are errors hidden somewhere, feel free to add a new issue.
 
 ## License
 

@@ -1,7 +1,5 @@
-import React, { PropTypes } from 'react';
-import { connect } from 'react-redux';
+import React from 'react';
 import { Subheader, Button } from '../../components';
-import styles from './styles.scss';
 
 class Home extends React.Component {
   render() {

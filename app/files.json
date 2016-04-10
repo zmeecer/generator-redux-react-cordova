@@ -2,6 +2,7 @@
   "static": [
     ".babelrc",
     ".editorconfig",
+    ".eslintrc",
     ".jscsrc",
     "gulpfile.js",
     "webpack.dev.config.js",

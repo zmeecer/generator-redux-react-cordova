@@ -16,7 +16,7 @@ function isLoading(state) {
 function isUpdateNeeds(state, updatePeriod) {
   const { lastUpdate } = state.posts;
   return lastUpdate
-          ? Moment().diff(Moment().valueOf(), lastUpdate) > updatePeriod / 1000
+          ? Moment().diff(Moment().valueOf(), lastUpdate) > updatePeriod * 1000
           : true;
 }
 
@@ -62,7 +62,7 @@ export function failPost(error) {
 
 export function loadPosts() {
   return (dispatch, getState) => {
-    if (!isLoading(getState())) {
+    if (!isLoading(getState()) && isUpdateNeeds(getState(), 10000)) {
       dispatch(fetchPosts());
 
       Axios.get(`http://jsonplaceholder.typicode.com/posts/`)

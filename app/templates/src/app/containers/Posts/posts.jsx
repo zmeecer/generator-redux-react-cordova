@@ -59,8 +59,8 @@ const mapStateToProps = (state) => (
 );
 
 Posts.propTypes = {
-  dispatch: React.PropTypes.func.isRequired,
-  result: React.PropTypes.object,
+  dispatch: PropTypes.func.isRequired,
+  result: PropTypes.object,
 };
 
 export default connect(mapStateToProps)(Posts);

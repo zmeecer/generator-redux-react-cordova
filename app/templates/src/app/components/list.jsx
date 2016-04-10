@@ -19,8 +19,8 @@ const List = ({ items, onClick }) => (
 );
 
 List.propTypes = {
-  onClick: React.PropTypes.func.isRequired,
-  items: React.PropTypes.array.isRequired,
+  onClick: PropTypes.func.isRequired,
+  items: PropTypes.array.isRequired,
 };
 
 export default List;

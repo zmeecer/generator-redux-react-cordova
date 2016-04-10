@@ -1,6 +1,5 @@
 import React from 'react';
 import { Block, Subheader } from '../../components';
-import styles from './styles.scss';
 
 const About = () => (
   <div>

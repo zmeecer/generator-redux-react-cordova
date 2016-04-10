@@ -16,7 +16,7 @@ const PostDetails = ({ post }) => (
 );
 
 PostDetails.propTypes = {
-  post: React.PropTypes.object,
+  post: PropTypes.object,
 };
 
 export default PostDetails;

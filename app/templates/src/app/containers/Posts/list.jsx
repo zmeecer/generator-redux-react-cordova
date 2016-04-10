@@ -15,8 +15,8 @@ const PostList = ({ posts, onShowDetails }) => (
 );
 
 PostList.propTypes = {
-  onShowDetails: React.PropTypes.func.isRequired,
-  posts: React.PropTypes.array.isRequired,
+  onShowDetails: PropTypes.func.isRequired,
+  posts: PropTypes.array.isRequired,
 };
 
 export default PostList;

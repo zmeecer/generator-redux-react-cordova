@@ -12,13 +12,17 @@
   ],
   "main": "app/index.js",
   "keywords": [
+    "yeoman-generator",
+    "yeoman",
     "redux",
     "react",
+    "react-redux",
     "cordova",
     "phonegap",
     "mobile",
     "cssmodules",
-    "webpack"
+    "webpack",
+    "simple"
   ],
   "dependencies": {
     "chalk": "^1.0.0",

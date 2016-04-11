@@ -3,6 +3,7 @@ var autoprefixer = require('autoprefixer');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var precss = require('precss');
 var path = require("path");
+var stylelint = require('stylelint');
 
 var publicFolderName = ".public";
 
@@ -64,12 +65,10 @@ module.exports = {
     ]
   },
   postcss: [
+    stylelint,
     autoprefixer({ browsers: ['Android >= 2.3', 'iOS >= 7', 'Chrome >= 46'] }),
     precss
   ],
-  eslint: {
-    configFile: '.eslintrc'
-  },
   jscs: {
     // JSCS errors are displayed by default as warnings.
     // Set `emitErrors` to `true` to display them as errors.

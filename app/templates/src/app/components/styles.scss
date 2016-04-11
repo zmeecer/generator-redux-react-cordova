@@ -1,9 +1,9 @@
 .subheader {
-  border-bottom: 2px solid #DD002A;
-  background: #E0E0E0;
+  border-bottom: 2px solid #dd002a;
+  background: #e0e0e0;
   h2 {
     margin: 0;
-    padding: .5em;
+    padding: 0.5em;
     text-align: center;
   }
 }
@@ -11,13 +11,13 @@
 .button {
   display: flex;
   align-items: center;
-  padding: 0 1em ;
+  padding: 0 1em;
   height: 3em;
   text-decoration: none;
-  color: #DD002A;
+  color: #dd002a;
   font-weight: bold;
-  background: #E0E0E0;
-  border-bottom: 2px solid #F0F0F0;
+  background: #e0e0e0;
+  border-bottom: 2px solid #f0f0f0;
   span {
     display: block;
     flex-grow: 1;
@@ -28,7 +28,7 @@
     height: 24px;
   }
   &:hover {
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
   }
 }
 
@@ -36,15 +36,16 @@
   a {
     display: block;
     position: relative;
-    border-bottom: 2px solid #E0E0E0;
-    padding: .5em 2em 0 1em;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 0.5em 2em 0 1em;
   }
-  h3, p {
-    margin: 0 0 .5em;
+  h3,
+  p {
+    margin: 0 0 0.5em;
   }
   img {
     position: absolute;
-    right: .5em;
+    right: 0.5em;
     top: 50%;
     height: 24px;
     margin-top: -12px;
@@ -52,8 +53,9 @@
 }
 
 .block {
-  padding: .5em 2em 0 1em;
-  h3, p {
-    margin: 0 0 .5em;
+  padding: 0.5em 2em 0 1em;
+  h3,
+  p {
+    margin: 0 0 0.5em;
   }
 }

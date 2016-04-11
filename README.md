@@ -47,10 +47,12 @@ Also, there is a helpful plugin for Chrome browser with CORS proxy, settings for
 ## Features
 
 * React ES6-style + React Router
-* Redux with simple AJAX request
+* Redux
+    * simple AJAX request
+    * internal search (TBD)
 * React CSS Modules
-* Webpack: babel (ES6 with stages), hot-reload, jscs, eslint (TBD)
-* PostCSS: autoprefixer, precss (sass-liked), csslint (TBD)
+* Webpack: babel (ES6 with stages), hot-reload, jscs, eslint
+* PostCSS: autoprefixer, precss (sass features), csslint
 * config.xml with initial resources: splash screens, icons, plugins
 * Gulp for images optimization and zip bundling for http://build.phonegap.com
 

@@ -4,6 +4,7 @@
     ".editorconfig",
     ".eslintrc",
     ".jscsrc",
+    ".stylelintrc",
     "gulpfile.js",
     "webpack.dev.config.js",
     "webpack.prod.config.js",

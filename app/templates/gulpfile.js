@@ -22,18 +22,12 @@ gulp.task('process_splashes', function() {
   return merge(resImages);
 });
 
-gulp.task('copy_static', function() {
-  var files = gulp.src(['./src/config.xml', './src/icon.png', './src/index.html'])
-    .pipe(gulp.dest(publicFolderName));
-  return merge(files);
-});
-
 gulp.task('clean', function() {
   return gulp.src([publicFolderName])
     .pipe(clean());
 });
 
-gulp.task('compress_build', ['process_icons', 'process_splashes', 'copy_static'], function() {
+gulp.task('compress_build', ['process_icons', 'process_splashes'], function() {
   return gulp.src(publicFolderName + '/**/*')
     .pipe(zip(zipName))
     .pipe(gulp.dest('./'));
@@ -46,5 +40,5 @@ gulp.task('clean_zip', ['compress_build'], function() {
 
 gulp.task('zip', ['clean_zip']);
 gulp.task('clean', ['clean']);
-gulp.task('static', ['process_icons', 'process_splashes', 'copy_static']);
+gulp.task('static', ['process_icons', 'process_splashes']);
 gulp.task('default', ['zip']);

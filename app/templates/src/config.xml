@@ -2,11 +2,12 @@
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "<%= props.id %>"
-        version   = "<%= props.version %>">
-    <name><%= props.name %></name>
-    <description><%= props.description %></description>
-    <author><%= props.author %></author>
+        id        = "META_BUNDLE_ID"
+        version   = "META_VERSION">
+    <name>META_NAME</name>
+    <description>META_DESCRIPTION</description>
+    <author href="META_AUTHOR_HREF" email="META_AUTHOR_EMAIL">META_AUTHOR_NAME</author>
+
 
     <plugin name="cordova-plugin-splashscreen" spec="3.2.1" />
     <plugin name="cordova-plugin-whitelist" spec="1.2.1" />
@@ -82,7 +83,7 @@
     </gap:config-file>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-        <string>100</string>
+        <string>META_SHORT_VERSION</string>
     </gap:config-file>
 
     <access origin="*" />

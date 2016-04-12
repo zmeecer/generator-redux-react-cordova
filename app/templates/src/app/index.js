@@ -9,7 +9,9 @@ import Home from './containers/Home';
 import Posts from './containers/Posts';
 import Static from './containers/Static';
 
-// require('file?name=www/[name].[ext]!./index.html');
+import '../index.html';
+import '../config.xml';
+import '../icon.png';
 
 document.addEventListener('deviceready', () => {
   // TODO: add splashscreen and statusbar plugin

@@ -4,6 +4,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var precss = require('precss');
 var path = require("path");
 var stylelint = require('stylelint');
+var appPackage = require('./package.json');
 
 var publicFolderName = ".public";
 
@@ -24,6 +25,11 @@ module.exports = {
     new webpack.NoErrorsPlugin(),
     new ExtractTextPlugin('application.css', {
       allChunks: true
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+          warnings: false,
+      }
     })
   ],
   module: {
@@ -54,6 +60,20 @@ module.exports = {
           'file?hash=sha512&digest=hex&name=[hash].[ext]',
           'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ],
+      },
+      {
+        test: /\.(html|xml)$/,
+        loaders: [
+          'file?name=[name].[ext]',
+          'replace?flags=g&regex=META_NAME&sub=' + appPackage.appName,
+          'replace?flags=g&regex=META_DESCRIPTION&sub=' + appPackage.description,
+          'replace?flags=g&regex=META_BUNDLE_ID&sub=' + appPackage.bundleId,
+          'replace?flags=g&regex=META_VERSION&sub=' + appPackage.version,
+          'replace?flags=g&regex=META_SHORT_VERSION&sub=' + appPackage.shortVersion,
+          'replace?flags=g&regex=META_AUTHOR_NAME&sub=' + appPackage.author.name,
+          'replace?flags=g&regex=META_AUTHOR_HREF&sub=' + appPackage.author.href,
+          'replace?flags=g&regex=META_AUTHOR_EMAIL&sub=' + appPackage.author.email
+        ]
       },
       {
         test: /\.(json)$/, loader: 'json-loader'

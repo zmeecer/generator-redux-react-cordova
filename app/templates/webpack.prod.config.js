@@ -71,7 +71,7 @@ module.exports = {
           'replace?flags=g&regex=META_VERSION&sub=' + appPackage.version,
           'replace?flags=g&regex=META_SHORT_VERSION&sub=' + appPackage.shortVersion,
           'replace?flags=g&regex=META_AUTHOR_NAME&sub=' + appPackage.author.name,
-          'replace?flags=g&regex=META_AUTHOR_HREF&sub=' + appPackage.author.href,
+          'replace?flags=g&regex=META_AUTHOR_HREF&sub=' + appPackage.author.url,
           'replace?flags=g&regex=META_AUTHOR_EMAIL&sub=' + appPackage.author.email
         ]
       },

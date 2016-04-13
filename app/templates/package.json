@@ -60,6 +60,7 @@
     "json-loader": "^0.5.4",
     "merge-stream": "^1.0.0",
     "multiple-replace-loader": "^0.2.0",
+    "null-loader": "^0.1.1",
     "postcss-loader": "^0.8.1",
     "postcss-scss": "^0.1.7",
     "precss": "^1.4.0",

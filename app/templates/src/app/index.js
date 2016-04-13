@@ -10,8 +10,11 @@ import Posts from './containers/Posts';
 import Static from './containers/Static';
 
 import '../index.html';
-import '../config.xml';
-import '../icon.png';
+import '../../config.xml';
+import 'file?name=[name].[ext]!../../icon.png';
+
+// require.context('../../splashes', true, /.*/);
+// require.context('../../icons', true, /.*/);
 
 document.addEventListener('deviceready', () => {
   // TODO: add splashscreen and statusbar plugin

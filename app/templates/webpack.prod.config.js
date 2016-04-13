@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 var precss = require('precss');
 var path = require("path");
 var stylelint = require('stylelint');
@@ -23,9 +23,7 @@ module.exports = {
   },
   plugins: [
     new webpack.NoErrorsPlugin(),
-    new ExtractTextPlugin('application.css', {
-      allChunks: true
-    }),
+    new CleanWebpackPlugin('./.public/'),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
           warnings: false,
@@ -52,34 +50,42 @@ module.exports = {
                   'css?modules&importLoaders=1&localIdentName=[local]_[hash:base64:5]',
                   'postcss'
                 ]
-        // loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader!sass-loader")
       },
       {
-        test: /\.(png|jpg|gif)$//*, loader: 'file-loader'*/,
+        test: /\.(png|jpg|gif)$/,
+        exclude: /(splashes|icons)/,
         loaders: [
           'file?hash=sha512&digest=hex&name=[hash].[ext]',
           'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ],
       },
       {
+        test: /\.png$/,
+        include: /(splashes|icons)/,
+        loaders: [
+          'file?name=[path][name].[ext]',
+          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ],
+      },
+      {
         test: /\.(html|xml)$/,
         loaders: [
-          'file?name=[name].[ext]',
-          'replace?flags=g&regex=META_NAME&sub=' + appPackage.appName,
-          'replace?flags=g&regex=META_DESCRIPTION&sub=' + appPackage.description,
-          'replace?flags=g&regex=META_BUNDLE_ID&sub=' + appPackage.bundleId,
-          'replace?flags=g&regex=META_VERSION&sub=' + appPackage.version,
-          'replace?flags=g&regex=META_SHORT_VERSION&sub=' + appPackage.shortVersion,
-          'replace?flags=g&regex=META_AUTHOR_NAME&sub=' + appPackage.author.name,
-          'replace?flags=g&regex=META_AUTHOR_HREF&sub=' + appPackage.author.url,
-          'replace?flags=g&regex=META_AUTHOR_EMAIL&sub=' + appPackage.author.email
+          'file?name=[name].[ext]', 'multiple-replace?' +
+          'META_NAME=' + appPackage.appName +
+          '&META_DESCRIPTION=' + appPackage.description +
+          '&META_BUNDLE_ID=' + appPackage.bundleId +
+          '&META_VERSION=' + appPackage.version +
+          '&META_SHORT_VERSION=' + appPackage.shortVersion +
+          '&META_AUTHOR_NAME=' + appPackage.author.name +
+          '&META_AUTHOR_HREF=' + appPackage.author.url +
+          '&META_AUTHOR_EMAIL=' + appPackage.author.emai
         ]
       },
       {
         test: /\.(json)$/, loader: 'json-loader'
       },
       {
-        test   : /\.(ttf|eot|svg|woff|otf)(\?[a-z0-9]+)?$/,
+        test: /\.(ttf|eot|svg|woff|otf)(\?[a-z0-9]+)?$/,
         loader : 'file'
       }
     ]
@@ -91,12 +97,8 @@ module.exports = {
   ],
   jscs: {
     // JSCS errors are displayed by default as warnings.
-    // Set `emitErrors` to `true` to display them as errors.
     emitErrors: true,
-
     // JSCS errors do not interrupt the compilation.
-    // Set `failOnHint` to `true` if you want any file with
-    // JSCS errors to fail.
     failOnHint: false,
   }
 };

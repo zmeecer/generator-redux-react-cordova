@@ -5,12 +5,11 @@
     ".eslintrc",
     ".jscsrc",
     ".stylelintrc",
-    "gulpfile.js",
     "webpack.dev.config.js",
     "webpack.prod.config.js",
 
-    "src/icon.png",
-    "src/config.xml",
+    "icon.png",
+    "config.xml",
     "src/index.html",
     "src/app/actions/posts.js",
 

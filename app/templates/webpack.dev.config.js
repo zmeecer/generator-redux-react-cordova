@@ -49,24 +49,30 @@ module.exports = {
                 ]
       },
       {
-        test: /\.(png|jpg|gif)$//*, loader: 'file-loader'*/,
+        test: /\.(png|jpg|gif)$/,
+        exclude: /(splashes|icons)/,
         loaders: [
           'file?hash=sha512&digest=hex&name=[hash].[ext]',
           'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
         ],
       },
       {
+        test: /\.png$/,
+        include: /(splashes|icons)/,
+        loader: 'null'
+      },
+      {
         test: /\.(html|xml)$/,
         loaders: [
-          'file?name=[name].[ext]',
-          'replace?flags=g&regex=META_NAME&sub=' + appPackage.appName,
-          'replace?flags=g&regex=META_DESCRIPTION&sub=' + appPackage.description,
-          'replace?flags=g&regex=META_BUNDLE_ID&sub=' + appPackage.bundleId,
-          'replace?flags=g&regex=META_VERSION&sub=' + appPackage.version,
-          'replace?flags=g&regex=META_SHORT_VERSION&sub=' + appPackage.shortVersion,
-          'replace?flags=g&regex=META_AUTHOR_NAME&sub=' + appPackage.author.name,
-          'replace?flags=g&regex=META_AUTHOR_HREF&sub=' + appPackage.author.url,
-          'replace?flags=g&regex=META_AUTHOR_EMAIL&sub=' + appPackage.author.email
+          'file?name=[name].[ext]', 'multiple-replace?' +
+          'META_NAME=' + appPackage.appName +
+          '&META_DESCRIPTION=' + appPackage.description +
+          '&META_BUNDLE_ID=' + appPackage.bundleId +
+          '&META_VERSION=' + appPackage.version +
+          '&META_SHORT_VERSION=' + appPackage.shortVersion +
+          '&META_AUTHOR_NAME=' + appPackage.author.name +
+          '&META_AUTHOR_HREF=' + appPackage.author.url +
+          '&META_AUTHOR_EMAIL=' + appPackage.author.emai
         ]
       },
       {
@@ -85,12 +91,8 @@ module.exports = {
   ],
   jscs: {
     // JSCS errors are displayed by default as warnings.
-    // Set `emitErrors` to `true` to display them as errors.
     emitErrors: false,
-
     // JSCS errors do not interrupt the compilation.
-    // Set `failOnHint` to `true` if you want any file with
-    // JSCS errors to fail.
     failOnHint: false,
   }
 };

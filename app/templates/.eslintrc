@@ -6,6 +6,9 @@
   "plugins": [
     "react"
   ],
+  "globals": {
+    "require": true
+  },
   "parserOptions": {
     "ecmaVersion": 7,
     "sourceType": "module",

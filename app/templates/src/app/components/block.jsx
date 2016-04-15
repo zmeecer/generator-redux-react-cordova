@@ -1,19 +1,21 @@
 import React from 'react';
 import styles from './styles.scss';
 
-const Block = ({ text, title, link }) => (
-  <div className={styles.block}>
-    { title &&
-      <h3>{title}</h3>
-    }
-    { text &&
-      <p>{text}</p>
-    }
-    { link &&
-      <a href={link}>{link}</a>
-    }
-  </div>
-);
+function Block({ text, title, link }) {
+  return (
+    <div className={styles.block}>
+      { title &&
+        <h3>{title}</h3>
+      }
+      { text &&
+        <p>{text}</p>
+      }
+      { link &&
+        <a href={link}>{link}</a>
+      }
+    </div>
+  );
+}
 
 Block.propTypes = {
   title: React.PropTypes.string,

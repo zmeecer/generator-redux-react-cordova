@@ -6,6 +6,7 @@ import configuredStore from './store/configureStore';
 
 import App from './containers/App';
 import Home from './containers/Home';
+import Features from './containers/Features';
 import Posts from './containers/Posts';
 import Static from './containers/Static';
 
@@ -28,6 +29,7 @@ ReactDOM.render(
           <IndexRoute component={Home}/>
           <Route path="/home" component={ Home } />
           <Route path="/posts(/:id)" component={ Posts } />
+          <Route path="/features(/:phrase)" component={ Features } />
           <Route path="/static/:type" component={ Static } />
           <Redirect from="/" to="/home" />
         </Route>

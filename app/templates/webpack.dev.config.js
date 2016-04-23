@@ -89,6 +89,12 @@ module.exports = {
     autoprefixer({ browsers: ['Android >= 2.3', 'iOS >= 7', 'Chrome >= 46'] }),
     precss
   ],
+  eslint: {
+    rules: {
+      'no-debugger': 0,
+      'no-console': 0,
+    }
+  },
   jscs: {
     // JSCS errors are displayed by default as warnings.
     emitErrors: false,

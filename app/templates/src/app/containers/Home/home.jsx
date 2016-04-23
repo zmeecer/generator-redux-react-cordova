@@ -14,9 +14,15 @@ class Home extends React.Component {
             label='Posts'
           />
         </div>
+        <div>
+          <Button
+            href='#/features'
+            label='Features'
+          />
+        </div>
       </div>
     );
   }
 }
 
-export default Home;
+export default (Home);

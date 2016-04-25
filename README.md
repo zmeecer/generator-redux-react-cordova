@@ -4,7 +4,7 @@
 
 ## For What is for
 
-It's boilerplate for Cordova (Phonegap) project: easy to use, useful for frequent projects development. In most cases, Cordova (Phonegap) application is optimal way to develop simple and cheep application over API for different platforms: iOS, Android, Web and other.
+It's boilerplate for Cordova (Phonegap) project: easy to use, useful for frequent projects development. In most cases, Cordova (Phonegap) application is optimal way to develop simple and cheap application over API for different platforms: iOS, Android, Web and other.
 
 Actually, this is a good way to understand basics of Redux + React + Webpack for each developer and try it! After that you can build your Hybrid Mobile Application on the http://build.phonegap.com site (it was free for 1 app) or do it locally.
 
@@ -42,7 +42,7 @@ Building in prod mode and bundling zip archive (gulp-zip 3.0.2 is necessary):
 npm run build
 ```
 
-Also, there is a helpful plugin for Chrome browser with CORS proxy, settings for screens resolution/orientation, geo-simaltion, etc [ripple-emalator](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc)
+Also, there is a helpful plugin for Chrome browser with CORS proxy, settings for screens resolution/orientation, geo-simulation, etc [ripple-emulator](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc)
 
 ## Features
 

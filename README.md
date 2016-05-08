@@ -49,7 +49,7 @@ Also, there is a helpful plugin for Chrome browser with CORS proxy, settings for
 * React ES6-style + React Router
 * Redux
     * simple AJAX request
-    * internal search (TBD)
+    * internal search
 * React CSS Modules
 * Webpack: babel (ES6 with stages), hot-reload, jscs, eslint
 * PostCSS: autoprefixer, precss (sass features), csslint

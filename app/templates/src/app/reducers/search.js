@@ -8,12 +8,12 @@ const initialState = {
 
 export function search(state = initialState, action) {
   switch (action.type) {
-  case SEARCH_CHANGE:
-    return {
-      ...state,
-      phrase: action.data,
-    };
-  default:
-    return state;
+    case SEARCH_CHANGE:
+      return {
+        ...state,
+        phrase: action.data,
+      };
+    default:
+      return state;
   }
 }

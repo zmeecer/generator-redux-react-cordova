@@ -8,10 +8,10 @@ function More() {
         title="TODO"
       />
       <Block
-        title='Search page: actions, filtering, reducer...'
+        title='Raising up a version of React'
       />
       <Block
-        title='Middleware for API requests'
+        title='Adding Middleware'
       />
       <Block
         title='Upgrades styles'

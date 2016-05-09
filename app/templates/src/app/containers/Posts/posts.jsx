@@ -9,9 +9,12 @@ import styles from './styles.scss';
 const IS_DETAILS = 'isDetails';
 
 class Posts extends React.Component {
-  state = {
-    [IS_DETAILS]: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      [IS_DETAILS]: false,
+    };
+  }
 
   onShowDetails(id) {
     this.setState({

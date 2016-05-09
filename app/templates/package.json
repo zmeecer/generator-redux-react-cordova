@@ -20,10 +20,10 @@
     "url": "http://github.com/zmeecer/generator-redux-react-cordova"
   },
   "dependencies": {
-    "axios": "^0.9.1",
-    "history": "^2.0.1",
-    "lodash": "^4.11.0",
-    "moment": "^2.11.2",
+    "axios": "^0.11.0",
+    "history": "^2.1.1",
+    "lodash": "^4.12.0",
+    "moment": "^2.13.0",
     "normalize.css": "^4.1.1",
     "react": "^0.14.8",
     "react-css-modules": "^3.7.5",

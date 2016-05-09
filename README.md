@@ -27,7 +27,7 @@ yo redux-react-cordova
 Development mode with hot-reload:
 
 ```bash
-npm run dev
+npm start
 ```
 
 Launch like website in prod mode:

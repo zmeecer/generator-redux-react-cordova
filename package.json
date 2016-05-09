@@ -1,6 +1,6 @@
 {
   "name": "generator-redux-react-cordova",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Yeoman generator for React+Redux on Cordova platform",
   "homepage": "https://github.com/zmeecer/generator-redux-react-cordova",
   "author": {
@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "chalk": "^1.0.0",
-    "yeoman-generator": "^0.23.3",
+    "yeoman-generator": "^0.22.5",
     "yosay": "^1.0.2"
   },
   "devDependencies": {

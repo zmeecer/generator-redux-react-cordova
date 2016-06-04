@@ -26,11 +26,11 @@
   ],
   "dependencies": {
     "chalk": "^1.0.0",
-    "yeoman-generator": "^0.22.5",
+    "yeoman-generator": "^0.21.2",
     "yosay": "^1.0.2"
   },
   "devDependencies": {
-    "eslint": "^2.9.0",
+    "eslint": "^2.11.1",
     "eslint-config-xo-space": "^0.13.0",
     "gulp": "^3.9.0",
     "gulp-eslint": "^2.0.0",

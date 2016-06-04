@@ -58,7 +58,7 @@ Also, there is a helpful plugin for Chrome browser with CORS proxy, settings for
 
 ## Supported Platforms
 
-* Node.js 4.x or 5.x as development environment
+* Node.js 4.x-6.x as development environment
 * Cordova-cli (phonegap-cli): 6.x [release note]( http://cordova.apache.org/news/2016/01/28/tools-release.html)
     * Cordova iOS: ~4.0.1
     * Cordova Android: ~5.1.0

@@ -8,7 +8,7 @@ function More() {
         title="TODO"
       />
       <Block
-        title='Raising up a version of React'
+        title='Integrate Material-UI'
       />
       <Block
         title='Adding Middleware'
